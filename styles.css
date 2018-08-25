@@ -1,0 +1,120 @@
+body {
+  background: lightgray;
+}
+
+.row {
+  background: #292b2c;
+}
+
+.main-menu {
+  font-size: 14px;
+}
+
+.toggler-btn {
+  position: absolute;
+  background: #292b2c;
+  color: white;
+  top: 6px;
+  right: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  padding: 0.3rem 0.5rem 0.2rem 0.5rem;
+  margin-right: 1rem;
+  display: none;
+}
+
+.dropdown-menu {
+  font-size: inherit;
+  display: none;
+  background: #292b2c;
+  border: none;
+  border-radius: 0;
+  border-radius: 0 0 0.5rem 0.5rem;
+  margin: 0;
+  padding: 0;
+  left: inherit;
+  right: 0;
+}
+.dropdown-menu .nav-link {
+  padding: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sub-dropdown > .dropdown-menu {
+  position: relative;
+  padding-left: 0.5rem;
+  font-size: 97%;
+}
+
+.dropdown,
+.sub-dropdown {
+  position: relative;
+}
+
+.nav-link {
+  padding: 1rem;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+.nav-link:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.5);
+}
+.nav-link:focus {
+  color: white;
+}
+
+.fa-bars {
+  font-size: 1.3rem;
+}
+
+.caret {
+  padding: 0.3rem 0.5rem;
+  float: right;
+  transition: all 0.2s;
+}
+
+.brand {
+  color: white;
+  font-weight: 100;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .toggler-btn {
+    display: block;
+  }
+
+  .main-menu {
+    padding: 0;
+    display: none;
+  }
+
+  .nav,
+  .nav-item,
+  .nav-link {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+
+  .nav-link {
+    padding: 0.3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .dropdown-menu {
+    text-align: left;
+    background: inherit;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+  .dropdown-menu .nav-link {
+    padding: 0.3rem;
+  }
+
+  .dropdown-menu,
+  .sub-dropdown > .dropdown-menu {
+    padding-left: 3%;
+  }
+}

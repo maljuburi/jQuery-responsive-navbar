@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Responsive Navbar</title>
+</head>
+
+<body>
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="brand col-xs-12 col-md-3">LOGO HERE</div>
+      <button class="toggler-btn">
+        <i class="fa fa-bars"></i>
+      </button>
+
+
+      <div class="main-menu col-xs-12 col-md-9">
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a title="Home" href="#" class="nav-link">Level 1</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a title="Levels" class="nav-link">Level 1 <span class="caret fa fa-angle-right"></span></a>
+            <ul class="dropdown-menu">
+              <li class="nav-item sub-dropdown">
+                <a class="nav-link">Level 2
+                  <span class="caret fa fa-angle-right"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item sub-dropdown">
+                    <a href="#" class="nav-link">Level 3
+                      <span class="caret fa fa-angle-right"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Level 4</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Level 4</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Level 4</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Level 4</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Level 3</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Level 2</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Level 1</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+  <script src="./scripts.js"></script>
+</body>
+
+</html>
